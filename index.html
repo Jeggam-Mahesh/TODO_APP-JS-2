@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo2</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins&display=swap" rel="stylesheet" >
+</head>
+<body> 
+    
+    <div id="page">
+        <div id="container1" class="container1"><span id="tasklist"><span style="font-weight:300; color:yellow;">Tasks</span> <span style="font-weight:100; color:yellow"> List</span></span> <i id="back" class="fa-solid fa-circle-chevron-left"></i> <span id="name"></span>    <a id="addtask" ><span><i class="fa-solid fa-square-plus"></i> <span class="ad" style="font-weight:100;font-size: 32px;">Add Task</span></span></a>  </div>
+
+    <div id="container2" class="container2"><span id="noitem">No List Added</span></div>
+    
+    </div>
+
+    <div class="popup" id="pop">
+        <div style="font-weight:bold;" >Add New List</div><hr>
+        <input id="input" class="popinput" type="text" placeholder="Add New List"><br>
+        <button class="btn" id="addbtn">Add</button>  <a id="closebtn"><button class="btn" >Close</button></a>
+    </div>
+    <div class="popup" id="pop2">
+        <div style="font-weight:bold;" >Add New Item</div><br>
+        <input id="input2" class="popinput" type="text" placeholder="Add New Item"><br>
+        <button class="btn" id="addbtn2">Add</button>  <a id="closebtn2"><button class="btn" >Close</button></a>
+    </div>
+   
+
+
+
+
+    
+</body>
+<script src="./index.js"></script>
+</html>

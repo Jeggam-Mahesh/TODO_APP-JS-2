@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.container1{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-size: 45px;
+    color: white;
+}
+.container2{
+    /* padding: 20px; */
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    color: white;
+    width: 98vw;
+    /* background-color: white; */
+    /* border: 2px solid white; */
+}
+
+hr{
+    margin-top: 10px;
+    width: 100%;
+    border: white solid 1px;
+}
+
+.fa-square-plus{
+    font-size: 40px;
+    color: rgb(88, 194, 83);
+}
+.blur{
+    filter: blur(4px);
+
+}
+a:hover{
+    cursor: pointer;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+.popup{
+    visibility: hidden;
+    position: absolute;
+    padding-top: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(128, 43, 0);
+    top: 35%;
+    left: 30%;
+    width: 35vw;
+    height: 220px;
+    background-color: rgb(242, 246, 218);
+    /* transform: translateY(20px); */
+}
+@keyframes pop {
+    from{top: 45%;}
+    to{ top: 35%;}
+    
+}
+#addbtn {
+    background-color: green;
+}
+#addbtn2 {
+    background-color: green;
+}
+/* #addList-1{
+    background-image: url("./writing.png");
+    background-position: center;
+    background-size: contain;
+    border: 5px solid black;
+} */
+.btn{
+    padding: 7px;
+    margin: 20px;
+    background-color: rgb(65, 9, 249);
+    color: white;
+    width: 70px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+    color: black;
+    box-shadow: 5px 5px 2px gray;
+}
+
+.popinput{
+    margin-top: 0px;
+    text-align: center;
+    width: 80%;
+    height: 35px;
+    box-shadow: 3px 3px 3px gray;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.child{
+    margin: 20px;
+    padding-top: 10px;
+    position: relative;
+    height: 350px;
+    width: 250px;
+    color: black;
+    border: 2px solid burlywood;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.fa-trash-can{
+    color: darkred;
+    position: absolute;
+    top: 85%;
+    cursor: pointer;
+}
+.fa-trash-can:hover{
+    font-size: larger;
+    color: red;
+
+}
+
+.fa-plus{
+    border-radius: 50%;
+    font-size: 25px;
+    position: absolute;
+    top: 86%;
+    right: 10%;
+    background-color:green ;
+    border: 2px solid green;
+    color: white;
+    cursor: pointer;
+}
+.fa-plus:hover{
+    font-size: 30px;
+}
+
+
+
+.markDonebtn{
+    background-color: green ;
+    color: white;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.child2{
+    color: white;
+    font-size: 25px;
+}
+#name{
+    color: white;
+}
+#back{
+   visibility: hidden;
+   position: absolute;
+   left: 400px;
+}
+#addtask{
+    visibility: visible;
+}
+#cardheader{
+    border: none;
+    text-overflow: hidden;
+    width: 100%;
+    word-wrap: break-word;
+    height:fit-content;
+    background-color:blanchedalmond;
+    color:blueviolet;
+    font-size: 25px;
+}
+#noitem{
+    margin-left: 12vw;
+    font-size: 30px;
+}
+
+
+@media (max-width:600px) {
+    .container2{
+        padding-top: 20px;
+        width: 100%;
+        flex-direction: column;
+        align-content: space-evenly;
+    }.child{
+        margin: auto;
+        margin-top: 20px;
+    }
+    .ad{
+        display: none;
+    }
+    .popup{
+        width: 60vw;
+        /* left: 20%; */
+      
+   
+    }
+    #back{
+        left: 50px;
+    }
+
+    /* .fa-square-plus{
+        font-size: 40px;
+        color: purple;
+        right: 90px;
+    } */
+    #name{
+        color: white;
+       margin-right: 90px;
+
+    }
+    .addtask{
+        right: 200px;
+    }
+}
+
+@media (max-width:380px) {
+    .popup{
+        height: 270px;
+      
+
+     
+    }
+    #back{
+        right: 50px;
+    }
+    /* .fa-square-plus{
+        font-size: 40px;
+        color: purple;
+        right: 90px;
+    } */
+    #name{
+        color: white;
+        margin-right: 90px;
+    }
+    .addtask{
+        right: 200px;
+    }
+}
