@@ -53,17 +53,20 @@ a:visited{
 }
 .popup{
     visibility: hidden;
-    position: absolute;
+    /* position: absolute; */
     padding-top: 20px;
     font-size: 25px;
     border-radius: 10px;
     text-align: center;
     color: rgb(128, 43, 0);
-    top: 35%;
-    left: 30%;
-    width: 35vw;
+    /* top: 35%; */
+    /* left: 30%; */
+    width: 30vw;
     height: 220px;
     background-color: rgb(242, 246, 218);
+    position: fixed;
+    top: 180px;
+    left: 35%;
     /* transform: translateY(20px); */
 }
 /* @keyframes pop {
@@ -73,9 +76,11 @@ a:visited{
 } */
 #addbtn {
     background-color: green;
+    margin-right: 80px;
 }
 #addbtn2 {
     background-color: green;
+    margin-right: 80px;
 }
 /* #addList-1{
     background-image: url("./writing.png");
@@ -85,7 +90,8 @@ a:visited{
 } */
 .btn{
     padding: 7px;
-    margin: 20px;
+    margin-top: 20px;
+    
     background-color: rgb(65, 9, 249);
     color: white;
     width: 70px;
@@ -190,7 +196,7 @@ a:visited{
 }
 
 
-@media (max-width:600px) {
+@media (max-width:500px) {
     .container2{
         padding-top: 20px;
         width: 100%;
@@ -230,10 +236,10 @@ a:visited{
 
 @media (max-width:380px) {
     .popup{
-        height: 270px;
+        height: 224px;
       
-
-     
+     /* top: 150px; */
+     /* left: 70px; */
     }
     #back{
         right: 50px;
@@ -249,5 +255,17 @@ a:visited{
     }
     .addtask{
         right: 200px;
+    }
+}
+@media screen and (min-width:375px) and (max-width:500px) {
+    .popup{
+   top: 40%;
+   left: 20%;
+    }
+    #addbtn {
+        margin-right: 40px;
+    }
+    #addbtn2 {
+        margin-right: 40px;
     }
 }
