@@ -259,8 +259,9 @@ a:visited{
 }
 @media screen and (min-width:375px) and (max-width:500px) {
     .popup{
+        width: 76vw;
    top: 40%;
-   left: 20%;
+   left: 13%;
     }
     #addbtn {
         margin-right: 40px;
